@@ -13,6 +13,35 @@ const ecosistemaVolpSound = [
         ]
     },
     {
+        categoria: "🎵 Streaming y Plataformas Musicales",
+        items: [
+            {
+                titulo: "Spotify",
+                descripcion: "Escucha nuestros paisajes sonoros y pistas de relajación en streaming continuo.",
+                url: "https://open.spotify.com/intl-es/artist/13FTmj2I6k1Cp0mE8f2nvO?si=wnLcuiNARVCcVZN-f3CS2A",
+                etiqueta: "Escuchar",
+                icono: "🟢",
+                destacado: false
+            },
+            {
+                titulo: "Apple Music",
+                descripcion: "Disfruta de la mejor calidad de audio de VolpSound directamente en tu dispositivo Apple.",
+                url: "https://music.apple.com/es/artist/volpsound/1885946987",
+                etiqueta: "Escuchar",
+                icono: "🍎",
+                destacado: false
+            },
+            {
+                titulo: "YouTube / YouTube Music",
+                descripcion: "Explora los videos, loops extendidos y pistas oficiales en nuestro canal principal.",
+                url: "https://youtube.com/@volpsound",
+                etiqueta: "Suscribirse",
+                icono: "📺",
+                destacado: false
+            }
+        ]
+    },
+    {
         categoria: "🛒 Paquetes de Audio WAV Sin Compresión (Gumroad)",
         items: [
             {
@@ -37,27 +66,6 @@ const ecosistemaVolpSound = [
                 url: "https://volpsound.gumroad.com/l/mlkgtv",
                 etiqueta: "$16 USD • 9 Pistas",
                 icono: "🎬",
-                destacado: false
-            }
-        ]
-    },
-    {
-        categoria: "🎧 Streaming y Licencias Individuales",
-        items: [
-            {
-                titulo: "Perfil de Artista en Spotify",
-                descripcion: "Escucha nuestros paisajes sonoros y pistas de relajación en streaming desde cualquier lugar.",
-                url: "https://open.spotify.com/intl-es/artist/13FTmj2I6k1Cp0mE8f2nvO?si=wnLcuiNARVCcVZN-f3CS2A",
-                etiqueta: "Escuchar",
-                icono: "🟢",
-                destacado: false
-            },
-            {
-                titulo: "Catálogo de Audio Stock en Pond5",
-                descripcion: "Adquiere pistas individuales con licencia comercial rápida para cine, videojuegos y proyectos audiovisuales.",
-                url: "https://www.pond5.com/es/artist/VolpSound?ref=VolpSound",
-                etiqueta: "Licencias Stock",
-                icono: "🎼",
                 destacado: false
             }
         ]
