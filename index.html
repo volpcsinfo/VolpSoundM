@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VolpSound | Terapia de Sonido, Audio WAV & App Oficial</title>
-    <meta name="description" content="Audio profesional sin compresión (WAV) para alivio de tinnitus, sueño profundo, concentración y creadores de contenido.">
+    <title>VolpSound | Sound Therapy, WAV Audio & Official App</title>
+    <meta name="description" content="Uncompressed WAV audio for tinnitus relief, deep sleep, focus, and content creators.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -14,24 +14,34 @@
     <div class="background-glow"></div>
     
     <main class="container">
+        <!-- Selector de Idioma -->
+        <div class="lang-bar">
+            <select id="language-selector" aria-label="Select Language">
+                <option value="en">🇺🇸 English</option>
+                <option value="es">🇪🇸 Español</option>
+                <option value="de">🇩🇪 Deutsch</option>
+                <option value="fr">🇫🇷 Français</option>
+                <option value="it">🇮🇹 Italiano</option>
+                <option value="pt">🇧🇷 Português</option>
+                <option value="ja">🇯🇵 日本語</option>
+                <option value="ko">🇰🇷 한국어</option>
+            </select>
+        </div>
+
         <!-- Cabecera de Marca -->
         <header class="profile-header">
-            <img src="IMG-20260215-WA0001(1).jpg" alt="VolpSound" style="width:100%; height:100%; border-radius:50%; object-fit:cover;">
+            <div class="avatar-ring">
+                <img src="IMG-20260215-WA0001(1).jpg" alt="VolpSound" style="width:100%; height:100%; border-radius:50%; object-fit:cover;">
+            </div>
             <div class="title-wrapper">
                 <h1>VolpSound</h1>
-                <span class="verified-badge" title="Marca Oficial Verificada">✓</span>
+                <span class="verified-badge" title="Verified Official Brand">✓</span>
             </div>
-            <p class="tagline">Terapia de Sonido Clínica, Paisajes Sonoros & Audio WAV</p>
-            <p class="bio">
-                Frecuencias de precisión y bucles limpios sin compresión diseñados para el alivio del tinnitus, descanso profundo, enfoque y producción multimedia.
-            </p>
+            <p class="tagline" id="ui-tagline"></p>
+            <p class="bio" id="ui-bio"></p>
             
             <!-- Insignias de Confianza -->
-            <div class="trust-badges">
-                <span class="badge">🎧 Audio WAV Sin Compresión</span>
-                <span class="badge">🛡️ Pago Seguro (Gumroad / Google)</span>
-                <span class="badge">📜 Licencia Royalty-Free</span>
-            </div>
+            <div class="trust-badges" id="trust-badges-container"></div>
         </header>
 
         <!-- Contenedor dinámico poblado por JavaScript -->
@@ -39,9 +49,9 @@
 
         <!-- Redes Sociales -->
         <footer class="social-footer">
-            <p class="social-title">Conecta y escucha muestras gratuitas</p>
+            <p class="social-title" id="ui-social-title"></p>
             <div id="social-container" class="social-links"></div>
-            <p class="copyright">© 2026 VolpSound Audio. Todos los derechos reservados.</p>
+            <p class="copyright" id="ui-copyright"></p>
         </footer>
     </main>
 
